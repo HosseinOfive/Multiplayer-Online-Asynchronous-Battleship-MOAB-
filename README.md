@@ -9,6 +9,7 @@ This is a network-based asynchronous multiplayer Battleship game server built in
 Since this game is run on the terminal, all actions are performed through text-based commands(strings):
   Registration: 
     player sends: ("REG %20s %d %d %c\n", name, x, y, d).
+    
                   - `name`: up to 20 characters (letters, digits, or '-')  
                   - `(x, y)`: center of the ship (10x10 grid)  
                   - `d`: '-' for horizontal (1x5), '|' for vertical (5x1)
@@ -18,6 +19,7 @@ Since this game is run on the terminal, all actions are performed through text-b
                   - `(3,4), '|' →` occupies `(3,2)-(3,6)`
 
 **Server Responses:**
+
           - `TAKEN\n` → name already used  
           - `INVALID\n` → ship placement out of bounds  
           - `WELCOME\n` → successful registration  
@@ -35,7 +37,8 @@ Since this game is run on the terminal, all actions are performed through text-b
     Message too long: Even the longest valid client message has a maximum possible length, if the limit is reached the player gets Disconncted.
 
 
-# How to Run: 
+# How to Run:
+
   Compile the files using gcc -O2 *.c.
   then run the out file using ./a.out <port number>
   the server will bind() the port number.
