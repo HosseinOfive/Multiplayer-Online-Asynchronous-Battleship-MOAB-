@@ -25,8 +25,9 @@ Since this game is run on the terminal, all actions are performed through text-b
           - `WELCOME\n` → successful registration  
           - `JOIN %s\n` → broadcast to all players
 
-### Bombing
+# Bombing
 **Player → Server:**
+
     Bombing: Player can request a bomb using ("BOMB %d %d\n", x, y)
     Server: If syntax error, the server replies ("INVALID\n")
             Server damage report: ("HIT %s %d %d %s\n", attacker, x, y, victim)
@@ -39,13 +40,18 @@ Since this game is run on the terminal, all actions are performed through text-b
 
 # How to Run:
 
-  Compile the files using gcc -O2 *.c.
+  Compile the files using
+  
+  gcc -O2 *.c.
   then run the out file using ./a.out <port number>
+  
+  
   the server will bind() the port number.
   if bind() gave “address in use” error, try another port number
 # Play remotely
   Supports SSH-based port forwarding and tunneling for remote gameplay.
   can run using:
+  
     ssh -R <remote_port>:<local_address>:<local_port> user@remotehost
     i.e. 
     ssh -R 14758:127.0.0.1:8080 user@remotehost
