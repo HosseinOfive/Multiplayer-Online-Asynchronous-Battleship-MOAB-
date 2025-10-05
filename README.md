@@ -1,4 +1,4 @@
-# Multiplayer-Online-Asynchronous-Battleship-MOAB-
+# Multiplayer-Online-Asynchronous-Battleship-MOAB
 A game server for MOAB written in **C** , designed to run on any Linux machine or WSL environment.  
 It can also be hosted remotely using **SSH tunneling and port forwarding** for secure client connections.
 
