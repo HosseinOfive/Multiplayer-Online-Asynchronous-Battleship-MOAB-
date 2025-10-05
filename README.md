@@ -8,7 +8,9 @@ This is a network-based asynchronous multiplayer Battleship game server built in
 # Message Syntax
 Since this game is run on the terminal, all actions are performed through text-based commands(strings):
   Registration: 
-    player sends: ("REG %20s %d %d %c\n", name, x, y, d).
+    player sends
+    
+    ("REG %20s %d %d %c\n", name, x, y, d).
     
                   - `name`: up to 20 characters (letters, digits, or '-')  
                   - `(x, y)`: center of the ship (10x10 grid)  
