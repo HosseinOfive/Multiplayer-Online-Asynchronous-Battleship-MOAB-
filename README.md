@@ -63,14 +63,15 @@ Since this game is run on the terminal, all actions are performed through text-b
   This project uses standard POSIX socket and multiplexing APIs (no external dependencies). It can be compiled on any Unix-based system or WSL using GCC
   Also, The project supports remote testing via SSH tunneling and port forwarding, enabling connections from external machines to the server’s listening socket.
   
-FIle Structure
-/src
- ├── server.c       # Main server logic
- ├── player.c       # Player management and validation
-/include
- └── player.h
-README.md
-Makefile
+# FIle Structure
+
+    /src
+     ├── server.c       # Main server logic
+     ├── player.c       # Player management and validation
+    /include
+     └── player.h
+    README.md
+    Makefile
 
 # Libraries and Tools Used
 * POSIX sockets
